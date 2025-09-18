@@ -1,0 +1,160 @@
+.fullpagecontainer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #E4F9F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 5rem;
+  color: #66BFBF;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #66BFBF;
+}
+
+.cloudleft{
+    position: absolute;
+    left: 200px;
+    bottom: 250px;
+}
+
+.cloudleft img{
+    width: 150px;
+    height: 100px;
+}
+
+.cloudright{
+    position: absolute;
+    right: 200px;
+    bottom: 570px;
+}
+
+.cloudright img{
+    width: 150px;
+    height: 100px;
+}
+
+.myinfo{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+.imagecontainer img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+}
+
+.myskills{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.myskills > div > h2 {
+    margin-bottom: 100px;
+}
+
+
+.skillcontainer1 img{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+#programming {
+    margin: 0px 0px 50px 0px;
+}
+
+.skillcontainer1{
+    margin-bottom: 100px;
+}
+
+#gaming {
+    margin: 0px 0px 50px 0px;
+}
+
+.skillcontainer2 img{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.gridsflex{
+    display: flex;
+    justify-content: center;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.contactme{
+    background-color: #66BFBF;
+    color: white;
+    height: 50px;
+    width: 120px;
+    border: none;
+    border-radius: 5%;
+    padding: 0px;
+}
+
+.footer {
+  background-color: #66BFBF;  
+  color: white;               
+  text-align: center;         
+  padding: 100px 0;            
+  margin-top: 100px;         
+}
+
+.footer-links {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: white;               
+  margin: 0 15px;             
+  text-decoration: none;     
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-links a:hover {
+  text-decoration: underline; 
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
