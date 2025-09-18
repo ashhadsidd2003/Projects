@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+
+<div class="addpostcontainer">
+  <h1>Create a New Post</h1>
+  <% if (success && success.length > 0) { %>
+    <div class="alert alert-success"><%= success[0] %></div>
+  <% } %>
+
+  <% if (error && error.length > 0) { %>
+    <div class="alert alert-danger"><%= error[0] %></div>
+  <% } %>
+
+  <form action="/add" method="POST">
+    <input type="text" name="title" placeholder="Post Title" class="input" required>
+    <br><br>
+    <textarea class="input"  name="content" rows="6" cols="40" placeholder="Write your content..." required></textarea>
+    <br><br>
+    <button type="submit" class="newpostbutton">Publish</button>
+  </form>
+
+  <br>
+  </div>
+
+    <%- include("partials/footer.ejs") %>
+

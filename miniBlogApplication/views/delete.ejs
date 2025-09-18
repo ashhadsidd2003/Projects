@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+<div class="deletecontainer">
+<h1>Are you sure you want to delete the following post?</h1>
+<div class="todelete">
+<div class="deletetitle"><h1><%= postToDel.title %></h1></div>
+<div class="deletecontent"><%= postToDel.content %></div>
+
+<div class="deletebuttons"><form action="/delete/<%= index %>" method="POST">
+    <button type="submit">Yes</button>
+</form>
+<a href="/">Cancel</a>
+</div>
+</div>
+</div>
+
+<%- include("partials/footer.ejs") %>

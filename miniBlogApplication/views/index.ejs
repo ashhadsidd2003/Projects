@@ -1,0 +1,37 @@
+<%- include("partials/header.ejs") %>
+<div class="homecontainer">
+    <h1>WELCOME TO YOUR FAVOURITE BLOG APPLICATION</h1>
+    <% if (success && success.length) { %>
+        <div class="alert alert-success"><%= success[0] %></div>
+    <% } %>
+
+
+    <% if (error && error.length) { %>
+        <div class="alert alert-danger"><%= error[0] %></div>
+    <% } %>
+
+
+    <% if (locals.posts) { %>
+        <% if(posts.length === 0) { %>
+            <h2 class="homenopost">No posts yet, be the first to post!!</h2>
+        <% } else{ %>
+            <% for( let i = 0 ; i < posts.length; i++){ %>
+            <div class="posts">
+               <h2 class="posttitle"><%= posts[i].title %></h2>
+               <p class="postcontent"><%= posts[i].content %></p>
+              
+              <div class="postbuttons">
+                <a href="/edit/<%= i %>">Edit</a>
+               <a href="/delete/<%= i %>">Delete</a>
+              
+              </div>
+            </div>
+            <% } %>
+
+        <% }}; %>
+
+    <a href="/add" class="newpost">Create new post</a>
+    </div>
+
+     <%- include("partials/footer.ejs") %>
+    

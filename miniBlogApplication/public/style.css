@@ -1,0 +1,255 @@
+.navbar {
+  display: flex;                
+  justify-content: space-between; 
+  align-items: center;          
+  padding: 10px 20px;
+  background: #0c214b;          
+  border-bottom: 1px solid #e5e7eb;
+  height: 70px;
+}
+
+.footer{
+    text-align: center;
+    background: #0c214b;
+    color: #2563eb;
+    margin: 150px 0px 0px 0px ;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 40px;
+  color: #2563eb;
+}
+
+.links a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: #95a0b5;
+}
+
+
+.homenopost{
+    height: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.newpost{
+    font-size: 20px;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.newpost:hover{
+    text-decoration: underline;
+}
+
+.app{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+html, body {
+  margin: 0;      
+  padding: 0;
+}
+.homecontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posts {
+  display: grid;
+  grid-template-rows: auto 1fr auto;  
+  max-width: 600px;     
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  margin-bottom: 50px;
+  background-color: #2563eb;
+}
+
+.posttitle{
+    display: block;
+    text-align: center;
+    background-color: rgb(162, 59, 59);
+    margin: 0px;
+    color: black;
+    border: 2px solid black;
+}
+
+.postbuttons{
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.postcontent{
+    text-align: center;
+    border: 2px solid black;
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.postbuttons a{
+    text-decoration: none;
+    color: black;
+}
+
+.postbuttons a:visited {
+  color: black;              
+}
+
+.postbuttons a:hover {
+  color: white;      
+}
+
+.addpostcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.newpostbutton{
+    background-color: #2563eb;
+    color: black;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.newpostbutton:hover{
+    text-decoration: underline;
+}
+
+.input{
+    background-color: #2563eb;
+    border: 3px solid black;
+}
+
+.input::placeholder {
+  color: black;         
+}
+
+.editcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editlabel{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.editinput{
+    background-color: #2563eb;
+    color: black;
+    border: 2px solid black;
+}
+
+.editbutton{
+    background-color: #2563eb;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+.editbutton:hover{
+    text-decoration: underline;
+}
+
+.deletecontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.todelete{
+    display: grid;
+    grid-template-rows: auto 1fr auto;  
+    max-width: 600px;     
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    margin-bottom: 50px;
+    background-color: #2563eb;
+}
+
+.deletetitle{
+    display: block;
+    text-align: center;
+    background-color: rgb(162, 59, 59);
+    margin: 0px;
+    color: black;
+    border: 2px solid black;
+}
+
+.deletebuttons{
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.deletecontent{
+    text-align: center;
+    border: 2px solid black;
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.deletebuttons button{
+    background-color: #2563eb;
+    border: none;
+    padding: 0px;
+    color: black;
+}
+
+.deletebuttons button:hover{
+    color: white;
+
+}
+
+.deletebuttons a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.deletebuttons a:visited {
+  color: black;              
+}
+
+.deletebuttons a:hover {
+  color: white;      
+}
+
+.aboutcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutcontainer h1{
+    color: #2563eb;
+}
+
+.aboutcontainer p{
+    color: rgb(162, 59, 59);
+}
