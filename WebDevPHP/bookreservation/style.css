@@ -1,0 +1,95 @@
+/* General Page Styling */
+body {
+    background-color: lightgray; /* Light gray background */
+    font-family: Arial, sans-serif; /* Basic font */
+    color: black; /* Black text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes the full viewport height */
+}
+
+/* Main Content Wrapper */
+main {
+    flex: 1; /* Pushes the footer to the bottom */
+    padding-bottom: 60px; /* Adds padding equal to the footer's height */
+}
+
+/* Header Styling */
+header {
+    background-color: blue; /* Blue header */
+    color: white; /* White text in header */
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: blue; /* Blue footer to match header */
+    color: white; /* White text in footer */
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Changed from fixed to relative */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Form Elements */
+form {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: white; /* White form background */
+    border: 1px solid gray; /* Light gray border */
+    border-radius: 5px;
+    width: 90%;
+    max-width: 500px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray; /* Light gray border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: blue; /* Blue button */
+    color: white; /* White text on button */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue; /* Darker blue on hover */
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: white; /* White background for list items */
+    border: 1px solid gray; /* Light gray border */
+    border-radius: 5px;
+}
+
+/* Links */
+a {
+    color: blue; /* Blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
