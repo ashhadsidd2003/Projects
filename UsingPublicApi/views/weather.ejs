@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forecast for <%= city %></title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #74ABE2, #5563DE);
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ffe082;
+    }
+
+    .weather-card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 25px;
+      margin: 30px auto;
+      width: 320px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .weather-card img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+
+    .temp {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+
+    .desc {
+      text-transform: capitalize;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .details {
+      margin-top: 15px;
+      text-align: left;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      padding: 0 10px;
+    }
+
+    a {
+      color: #fff;
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      background: #3949ab;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      background: #5c6bc0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Forecast for <%= city %></h1>
+  <h2><%= message %></h2>
+
+  <div class="weather-card">
+    <% if (tomorrow && tomorrow.weather && tomorrow.weather[0]) { %>
+      <img src="https://openweathermap.org/img/wn/<%= tomorrow.weather[0].icon %>@2x.png" alt="Weather Icon" />
+      <div class="temp"><%= tomorrow.main.temp.toFixed(1) %>°C</div>
+      <div class="desc"><%= tomorrow.weather[0].description %></div>
+
+      <div class="details">
+        🌡️ Feels Like: <%= tomorrow.main.feels_like.toFixed(1) %>°C <br>
+        💧 Humidity: <%= tomorrow.main.humidity %>% <br>
+        🌬️ Wind Speed: <%= tomorrow.wind.speed %> m/s <br>
+        ☁️ Clouds: <%= tomorrow.clouds.all %>% <br>
+        📊 Pressure: <%= tomorrow.main.pressure %> hPa
+      </div>
+    <% } else { %>
+      <p>No detailed data available for tomorrow.</p>
+    <% } %>
+  </div>
+
+  <a href="/">🔙 Check another city</a>
+</body>
+</html>

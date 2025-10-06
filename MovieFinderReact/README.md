@@ -1,16 +1,29 @@
-# React + Vite
+Movie Finder App:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast and responsive movie search web application built with React and Vite.
+It uses the TMDb API for real-time movie data and Appwrite for managing trending metrics.
+Users can search movies, view detailed information, and explore trending titles in a clean and modern interface.
 
-Currently, two official plugins are available:
+Features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-Search movies instantly using live TMDb API
+-View detailed movie information (overview, rating, release year, language, genres)
+-Trending movies fetched dynamically from Appwrite
+-Movie detail modal with clean layout
+-Debounced search input for optimized performance
+-Responsive UI built with Tailwind CSS
+-Fully deployed on Vercel
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Tech Stack:
 
-## Expanding the ESLint configuration
+Frontend : React + Vite
+Styling	: Tailwind CSS
+API	TMDb : (The Movie Database)
+Backend : Appwrite (for trending and metrics)
+Deployment : Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Deployment:
+The project is deployed on Vercel and can be accessed at:
+https://projects-tau-olive.vercel.app
