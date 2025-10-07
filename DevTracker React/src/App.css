@@ -1,0 +1,199 @@
+.app-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: #00e0ff;
+  text-shadow: 
+    0 0 10px #00e0ff,   
+    0 0 20px #00bcd4,    
+    0 0 30px rgba(0, 188, 212, 0.5); 
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+.app-intro {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #ccc;
+  font-size: 25px;
+  text-align: center;
+  z-index: 2;
+  line-height: 1.5;
+  text-shadow: 0 0 5px rgba(0, 224, 255, 0.7), 0 0 10px rgba(0, 224, 255, 0.4);
+}
+
+
+.app-container {
+  min-height: 100vh;
+  background-image: url("./assets/seimage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  color: #fff;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  
+  align-items: center;  
+  gap: 20px;
+}
+
+.app-container::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  z-index: 0;
+}
+
+
+.email-form,
+.roadmap-section {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.email-form h2 {
+    color: #fff; 
+    margin-bottom: 20px;
+    z-index: 2;
+    text-shadow: 0 0 5px rgba(0, 224, 255, 0.5); 
+}
+
+.email-form input {
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  border-radius: 6px;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 8px rgba(0, 224, 255, 0.5);
+}
+
+.email-form button {
+  background-color: rgba(7, 55, 106, 0.4);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.email-form button:hover {
+  background-color: rgba(7, 55, 106, 0.8); 
+  box-shadow: 0 0 10px #00e0ff; 
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+.header h1 {
+  font-size: 40px;
+  margin-bottom: 5px;
+  text-shadow: 0 0 5px rgba(0, 224, 255, 0.7), 0 0 10px rgba(0, 224, 255, 0.4);
+}
+
+.header h2 {
+  margin-top: 0;
+  color: #00e0ff; 
+  text-shadow: 0 0 5px rgba(0, 224, 255, 0.4);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #333;
+  border-radius: 6px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #00e0ff; 
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px #00e0ff; 
+}
+
+.topic {
+  margin-top: 20px;
+}
+
+.topic-button {
+  background-color: rgba(7, 55, 106, 0.4); 
+  color: white;
+  border: 1px solid #00bcd4;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 188, 212, 0.3); 
+  transition: all 0.2s ease;
+}
+
+.topic-button:hover {
+  background-color: rgba(7, 55, 106, 0.8); 
+  box-shadow: 0 0 10px #00e0ff; 
+}
+
+
+.subtopic-container {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.subtopic-button {
+  background-color: rgba(34, 34, 34, 0.6);
+  color: white;
+  border: none;
+  border-left: 3px solid #00bcd4; 
+  border-radius: 0 5px 5px 0; 
+  padding: 8px 12px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.subtopic-button:hover {
+  background-color: rgba(34, 34, 34, 0.9);
+  border-left: 3px solid #00e0ff; 
+}
+
+.item-list {
+  list-style: none;
+  text-align: left;
+  margin-left: 20px;
+  padding: 10px 0;
+}
+
+.item-list li {
+    padding: 3px 0;
+    font-size: 15px; 
+}
+
+.item-list label {
+  cursor: pointer;
+}
+
+.item-list label.complete {
+    color: #00bcd4; 
+    font-weight: 500;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 8px;
+  accent-color: #00e0ff; 
+}
