@@ -21,7 +21,7 @@ function App() {
   const [roadmap, setRoadmap] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
 
   const handleEmailSubmit = async (e) => {
     e.preventDefault();
@@ -139,10 +139,11 @@ function App() {
             <div key={tIndex} className="topic">
               <button
                 className="topic-button"
-                onClick={() => {
+                onClick={async () => {
                   const updated = [...roadmap];
                   updated[tIndex].expanded = !updated[tIndex].expanded;
                   setRoadmap(updated);
+                  await saveRoadmapToDB(updated);
                 }}
               >
                 <span>{topic.expanded ? <ChevronDown size={16}/> : <ChevronRight size={16}/>} {topic.title}</span>
@@ -155,11 +156,12 @@ function App() {
                     <div key={sIndex} className="subtopic">
                       <button
                         className="subtopic-button"
-                        onClick={() => {
+                        onClick={async () => {
                           const updated = [...roadmap];
                           updated[tIndex].subtopics[sIndex].expanded =
                             !updated[tIndex].subtopics[sIndex].expanded;
                           setRoadmap(updated);
+                          await saveRoadmapToDB(updated);
                         }}
                       >
                         <span>{sub.expanded ? <ChevronDown size={16}/> : <ChevronRight size={16}/>} {sub.title}</span>
